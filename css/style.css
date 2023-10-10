@@ -1,5 +1,11 @@
 :root {
-
+--font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+--font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+--font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+--font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+--font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 
 * {
@@ -29,5 +35,178 @@ img {
   max-width: 100%;
 }
 
+#top {
+  background-color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.image-grid #image-to-span {
+  grid-column: 1 / 4;
+}
+
+
+@media (min-width: 500px) {
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image-grid #image-to-span {
+    grid-column: 1 / 2;
+  }
+}
+
+.image-grid > img {
+  border-radius: 3px;
+}
+
+#pics {
+  display: flex;
+}
+
+#pics h1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#pic .limited p {
+margin: 0;
+text-align: left;
+}
+
+/*I can't flush left my text*/
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  color: #fff;
+  background-color: black;
+  border-radius: 5px;
+  margin: 1em auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 40px;
+}
+
+nav ul li {
+  padding-left: 1.125em;
+  color: black;
+}
+
+nav ul li a:link {
+  color: black;
+  text-decoration-line: none;
+}
+
+
+#behind h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #behind > div > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: inherit;
+  }
+}
+
+.reviews h2 {
+  text-align: center;
+}
+
+ /* dd > dt > dl {
+    padding-left: 0;
+  } */
+
+.reviews li {
+  list-style: none;
+}
+
+.reviews {
+  background-color: black;
+  color: white;
+  padding: 4em;
+}
+
+@media (min-width: 768px) {
+  .reviews > div > ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.flavours h2 {
+  text-align: center;
+}
+
+
+@media (max-width:600px) {
+  .flavours {
+    /*display: flex;
+    gap: 1em;
+    margin-top: 2.5em;*/
+}
+}
+
+.flavours > article {
+  column-count: 4;
+  align-items: center;
+  margin: 10em;
+}
+
+article {
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  padding-bottom: 2em;
+  margin: 2em;
+}
+
+ article > h3, p {
+  padding-left: 2em;
+  text-align: center;
+ }
+    
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  padding: 2em;
+}
+
+/*
+.reviews {
+  column-count: 3;
+} */
 
 
