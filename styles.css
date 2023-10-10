@@ -64,7 +64,15 @@ span {
   border-radius: 10;
 }*/
 
-#behind {
-  align-items: center;
-  display: flex;
+/*.pics {
+  column-count: 2;
+}*/
+
+.behind {
+  column-count: 2;
+  justify-content: space-between;
+  margin: 10em;
+
 }
+
+
