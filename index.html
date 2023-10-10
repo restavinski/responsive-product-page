@@ -12,30 +12,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Shop</a>
-        </li>
-        <li>
-          <a href="#">About Us</a>
-        </li>
-      </ul>
-    </nav>
+  <header id="top">
+    <div class="wrapper">
+      <img src="images/doughp-logo.webp" alt="logo">
+      <nav>
+        <ul>
+          <li id="first-list">
+            <a href="#">Shop</a>
+          </li>
+          <li id="first-list">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <session>
-      <h1>Valentine's Day "Bite Me"</h1>
-      <dl id="limited">
-        <dt>Limited edition</dt>
-        <dd>Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</dd>
-      </dl>
-      <p id="price">$55.00</p>
-      <p>For the 6th Valentine’s Day in a row, Red Velvet Vixen is back by popular demand and this time she's bite-sized! A luscious blend of red velvet cake and cream cheese frosting whipped into our blonde cookie dough, served up bite-sized for the first time ever!</p>
-      <p>In this Valentine's Day 3-pack you'll receive Red Velvet Vixen, Peanut Butter Kiss, and our classic Ride or Die, chocolate chip. It makes a perfect gift your Valentine can take a bite out of!</p>
-      <p id="button">Add to cart</p>
+      <div class="wrapper">
+        <span>
+          <img src="images/product-shot-1.webp" alt="one">
+          <img src="images/product-shot-2.webp" alt="two">
+          <img src="images/product-shot-3.webp" alt="three">
+          <img src="images/product-shot-4.webp" alt="four">
+        </span> 
+        <h1>Valentine's Day "Bite Me"</h1>
+        <dl id="limited">
+          <dt>Limited edition</dt>
+          <dd>Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</dd>
+        </dl>
+        <p id="price">$55.00</p>
+        <p>For the 6th Valentine’s Day in a row, Red Velvet Vixen is back by popular demand and this time she's bite-sized! A luscious blend of red velvet cake and cream cheese frosting whipped into our blonde cookie dough, served up bite-sized for the first time ever!</p>
+        <p>In this Valentine's Day 3-pack you'll receive Red Velvet Vixen, Peanut Butter Kiss, and our classic Ride or Die, chocolate chip. It makes a perfect gift your Valentine can take a bite out of!</p>
+        <p class="button">Add to cart</p>
+      </div>
+      
+     
     </session>
 
     <session id="behind">
@@ -83,7 +96,9 @@
     </session>
   </main>
   <footer>
-    &copy; 2023 Doughp Cookie Dough
+    <div class="wrapper">
+      &copy; 2023 Doughp Cookie Dough
+    </div>
   </footer>
 </body>
 </html>
